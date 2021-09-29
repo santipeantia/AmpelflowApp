@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ds_report_costperproject_detail" targetNamespace="http://tempuri.org/ds_report_costperproject_detail.xsd" xmlns:mstns="http://tempuri.org/ds_report_costperproject_detail.xsd" xmlns="http://tempuri.org/ds_report_costperproject_detail.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ds_report_costperproject_detail" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ds_report_costperproject_detail" msprop:Generator_UserDSName="ds_report_costperproject_detail">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ds_report_costperunit_detail_dt" msprop:Generator_TableClassName="ds_report_costperunit_detail_dtDataTable" msprop:Generator_TableVarName="tableds_report_costperunit_detail_dt" msprop:Generator_TablePropName="ds_report_costperunit_detail_dt" msprop:Generator_RowDeletingName="ds_report_costperunit_detail_dtRowDeleting" msprop:Generator_RowChangingName="ds_report_costperunit_detail_dtRowChanging" msprop:Generator_RowEvHandlerName="ds_report_costperunit_detail_dtRowChangeEventHandler" msprop:Generator_RowDeletedName="ds_report_costperunit_detail_dtRowDeleted" msprop:Generator_UserTableName="ds_report_costperunit_detail_dt" msprop:Generator_RowChangedName="ds_report_costperunit_detail_dtRowChanged" msprop:Generator_RowEvArgName="ds_report_costperunit_detail_dtRowChangeEvent" msprop:Generator_RowClassName="ds_report_costperunit_detail_dtRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CustNamex" msprop:Generator_ColumnVarNameInTable="columnCustNamex" msprop:Generator_ColumnPropNameInRow="CustNamex" msprop:Generator_ColumnPropNameInTable="CustNamexColumn" msprop:Generator_UserColumnName="CustNamex" type="xs:string" minOccurs="0" />
+              <xs:element name="Addressx" msprop:Generator_ColumnVarNameInTable="columnAddressx" msprop:Generator_ColumnPropNameInRow="Addressx" msprop:Generator_ColumnPropNameInTable="AddressxColumn" msprop:Generator_UserColumnName="Addressx" type="xs:string" minOccurs="0" />
+              <xs:element name="GoodName1x" msprop:Generator_ColumnVarNameInTable="columnGoodName1x" msprop:Generator_ColumnPropNameInRow="GoodName1x" msprop:Generator_ColumnPropNameInTable="GoodName1xColumn" msprop:Generator_UserColumnName="GoodName1x" type="xs:string" minOccurs="0" />
+              <xs:element name="projectnamex" msprop:Generator_ColumnVarNameInTable="columnprojectnamex" msprop:Generator_ColumnPropNameInRow="projectnamex" msprop:Generator_ColumnPropNameInTable="projectnamexColumn" msprop:Generator_UserColumnName="projectnamex" type="xs:string" minOccurs="0" />
+              <xs:element name="quantityx" msprop:Generator_ColumnVarNameInTable="columnquantityx" msprop:Generator_ColumnPropNameInRow="quantityx" msprop:Generator_ColumnPropNameInTable="quantityxColumn" msprop:Generator_UserColumnName="quantityx" type="xs:string" minOccurs="0" />
+              <xs:element name="priceperunitx" msprop:Generator_ColumnVarNameInTable="columnpriceperunitx" msprop:Generator_ColumnPropNameInRow="priceperunitx" msprop:Generator_ColumnPropNameInTable="priceperunitxColumn" msprop:Generator_UserColumnName="priceperunitx" type="xs:string" minOccurs="0" />
+              <xs:element name="amountx" msprop:Generator_ColumnVarNameInTable="columnamountx" msprop:Generator_ColumnPropNameInRow="amountx" msprop:Generator_ColumnPropNameInTable="amountxColumn" msprop:Generator_UserColumnName="amountx" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
