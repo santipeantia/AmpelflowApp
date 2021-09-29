@@ -21,7 +21,7 @@
             }
 
             .bxbpdercolor {
-                border-top-color: #00b4d8;
+                border-top-color: #00b4d5;
             }
 
             
