@@ -1,16 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 using System.Configuration;
 using System.Data.SqlClient;
 using System.Data;
 using CrystalDecisions.CrystalReports.Engine;
 using AmpelflowWeb.DBConnect;
 using OfficeOpenXml;
-using System.IO;
 
 namespace AmpelflowApp.xReporting
 {
@@ -18,7 +13,9 @@ namespace AmpelflowApp.xReporting
     {
         
         string ConStr = ConfigurationManager.ConnectionStrings[dbConnect.ServNameDb].ToString();
-        
+
+        ReportDocument rpt = new ReportDocument();
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -51,7 +48,7 @@ namespace AmpelflowApp.xReporting
                         Console.WriteLine(Dt.Rows.Count);
                         ReportDocument rpt = new ReportDocument();
                         rpt.Load(Server.MapPath("Reports/report_stock_net.rpt"));
-                         rpt.SetDatabaseLogon("sa", "123456789sa", "localhost:51433", "Db_AmpelFlow");
+                        rpt.SetDatabaseLogon("sa", "AmpelitE88", "192.168.1.13", "Db_AmpelFlow");
 
 
                         ds_report_stocknet _Report_Stocknet = new ds_report_stocknet();
@@ -147,7 +144,7 @@ namespace AmpelflowApp.xReporting
                     Console.WriteLine(dtx.Rows.Count);
                     ReportDocument rpt = new ReportDocument();
                     rpt.Load(Server.MapPath("Reports/report_stock_movement.rpt"));
-                    rpt.SetDatabaseLogon("sa", "123456789sa", "localhost:51433", "Db_AmpelFlow");
+                    rpt.SetDatabaseLogon("sa", "AmpelitE88", "192.168.1.13", "Db_AmpelFlow");
 
                     ds_report_stockmovment _Report_Stockmovment = new ds_report_stockmovment();
                     _Report_Stockmovment.Merge(dtx);
